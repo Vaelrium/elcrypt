@@ -5,12 +5,24 @@
 ** Login   <durand_u@epitech.net>
 ** 
 ** Started on  Sat Mar 14 09:41:09 2015 Rémi DURAND
-** Last update Sat Mar 14 09:41:31 2015 Rémi DURAND
+** Last update Sat Mar 14 11:20:12 2015 Rémi DURAND
 */
 
 #ifndef _ELC_H_
 # define _ELC_H_
 
+# include <string.h>
+# include <stdio.h>
 
+typedef struct	s_cry
+{
+  char		fkey[8];
+  long int	pkey;
+  int		sfd;
+  int		dfd;
+  int		flag;
+}		t_cry;
+
+int		parse_args(t_cry *crypt, char **av);
 
 #endif /* !_ELC_H_ */

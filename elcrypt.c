@@ -5,14 +5,16 @@
 ** Login   <durand_u@epitech.net>
 ** 
 ** Started on  Sat Mar 14 09:40:22 2015 Rémi DURAND
-** Last update Sat Mar 14 09:40:59 2015 Rémi DURAND
+** Last update Sat Mar 14 10:49:38 2015 Rémi DURAND
 */
 
 #include "elcrypt.h"
 
-int	main(int ac, char **av)
+int		main(int ac, char **av)
 {
-  (void)ac;
-  (void)av;
+  t_cry		crypt;
+
+  if (ac != 8 || parse_args(&crypt, &av[1]) == (-1))
+    return (-1);
   return (0);
 }

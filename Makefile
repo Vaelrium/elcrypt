@@ -5,10 +5,11 @@
 ## Login   <durand_u@epitech.net>
 ## 
 ## Started on  Sat Mar 14 09:35:26 2015 Rémi DURAND
-## Last update Sat Mar 14 09:40:00 2015 Rémi DURAND
+## Last update Sat Mar 14 10:59:20 2015 Rémi DURAND
 ##
 
-SRC	=	elcrypt.c
+SRC	=	elcrypt.c	\
+		parse.c
 
 CC	=	gcc
 
